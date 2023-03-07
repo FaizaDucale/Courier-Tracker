@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Courier Tracker </title>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <style>
+      /* Style the navigation bar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+        padding: 10px;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+      }
+
+      /* Style the links inside the navigation bar */
+      .navbar a {
+        color: black;
+        text-align: left;
+        text-decoration: none;
+        padding: 10px;
+	font-size: 15px;
+	margin-right: 20px;
+      }
+body {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+      /* Change the color of links on hover */
+      .navbar a:hover {
+        background-color: #93C572;
+        color: black;
+      }
+
+      /* Add a color to the active/current link */
+      .active {
+        background-color: #93C572;
+        color: white;
+      }
+
+      /* Style the content */
+      .content {
+        display: flex;
+	 flex-direction: column;
+        height: calc(100vh - 60px);
+	height: 100%;
+ 	 line-height: 1.8;
+      }
+
+      /* Style the left section */
+      .left-section {
+       align-items: center;
+	background-position: center;
+ 	 background-size: cover;
+  	Background-color: #93C572;
+ 	 min-height: 100%;
+        background-color:  #93C572;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+      }
+	
+
+
+      /* Style the right section */
+      .right-section {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+  img {
+    margin-left: auto;
+  }
+
+      /* Style the form */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      input {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
+      }
+ #info-container div:last-child {
+  margin-bottom: 30px;
+}
+
+
+#continue-btn {
+    position: bottom;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2px;
+    right: 0%;
+    margin-left: 10px; /* adjust this value as needed */
+    padding: 1px 2px;
+    font-size: 16px;
+    background-color: #59910F;
+    color: #fff;
+    border: none;
+    border-radius: 15px; /* adjust this value to increase/decrease the roundness of the button */
+    cursor: pointer;
+    height: 30px;
+}
+
+#my-element {
+    position: left;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#my-element a {
+    color: grey;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+
+  #my-element a:hover {
+    color: lightgrey;
+  }
+
+
+.status-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+	Background-color: #94C973;
+
+}
+
+    </style>
+  </head>
+  <body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <a href="#">CT</a>
+      <div>
+<img align="left" src="icon.jpg" alt="icon" width="50" height="40">
+  <a href="#">Hello, Bob</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      
+
+</div>
+      </div>
+    </div>
+
+    <!-- Page content -->
+
+   <div class="left-section">
+  <h1><img align="left" src="personicon.jpg" alt="icon" width="50" height="40">Driver: Bob Bobby</h1>
+  <h2>Shipping with: FedEx</h2>
+  <div class="status-section">
+    <h3><u>Package Status</u></h3>
+    <p><img align="left" src="location.jpg" alt="icon" width="20" height="20">Parcel sent out by courier: February 27, 2023 @ 3:45pm </p>
+    <p><img align="left" src="location.jpg" alt="icon" width="20" height="20">Parcel arrived at warehouse: February 28, 2023 @ 10:00am  </p>
+    <button id="continue-btn">Current Status</button>
+  </div>
+  <div id="info-container"></div>
+</div>
+</div>
+<script>
+var continueBtn = document.getElementById("continue-btn");
+var infoContainer = document.getElementById("info-container");
+
+continueBtn.addEventListener("click", function() {
+  // create new information container
+  var newInfo = document.createElement("div");
+
+  // set background color of new information container to green
+  newInfo.style.backgroundColor = "	#94C973";
+
+  // create image element
+  var image = document.createElement("img");
+  image.src = "location.jpg";
+  image.style.float = "left";
+  image.width = 20;
+  image.height = 20;
+
+  // create text elements
+
+  var text1 = document.createElement("p");
+  text1.innerText = "Parcel picked up by driver: March 1, 2023 @ 8:03am";
+
+  // create div element for text2
+  var div2 = document.createElement("div");
+  div2.style.marginLeft = "50px";
+  var image2 = image.cloneNode(true);
+  var text2 = document.createElement("p");
+  text2.innerText = "Package out for delivery";
+  div2.appendChild(image2);
+  div2.appendChild(text2);
+
+  // create div element for text3
+  var div3 = document.createElement("div");
+  div3.style.marginLeft = "50px";
+  var image3 = image.cloneNode(true);
+  var text3 = document.createElement("p");
+  text3.innerText = "Delivered: March 1, 2023 @ 3:00pm EST";
+  div3.appendChild(image3);
+  div3.appendChild(text3);
+
+  // create div element for text4
+ var div4 = document.createElement("div");
+div4.style.marginLeft = "50px";
+var image4 = image.cloneNode(true);
+var text4 = document.createElement("p");
+text4.innerText = "Delivery Confirmation #: 112233444aksd12";
+div4.appendChild(image4);
+div4.appendChild(text4);
+
+
+  // append elements to the new information container
+
+  newInfo.appendChild(image);
+  newInfo.appendChild(text1);
+  newInfo.appendChild(div2);
+  newInfo.appendChild(div3);
+  newInfo.appendChild(div4);
+
+  // append new information container to the container
+  infoContainer.appendChild(newInfo);
+
+  // move button to the bottom of the container
+  continueBtn.style.position = "absolute";
+  continueBtn.style.bottom = "10px";
+  continueBtn.style.right = "0";
+});
+
+</script>
+<div id="my-element">
+  <a href="#">Contact Information</a>
+  <br>
+  <a href="#">FAQs</a>
+</div>
+
+
+
+  </head>
+  <body>
+    
+
+</div>
+

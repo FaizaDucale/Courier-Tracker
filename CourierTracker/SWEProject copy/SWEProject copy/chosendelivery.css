@@ -1,0 +1,25 @@
+body {
+  background-image: url("background-image.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  padding: 16px;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: lightblue;
+}
+
+.container {
+  background-color: white;
+  color: black;
+}
