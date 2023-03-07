@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Courier Tracker </title>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <style>
+      /* Style the navigation bar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+        padding: 10px;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+      }
+
+      /* Style the links inside the navigation bar */
+      .navbar a {
+        color: black;
+        text-align: left;
+        text-decoration: none;
+        padding: 10px;
+	font-size: 15px;
+	margin-right: 20px;
+      }
+
+      /* Change the color of links on hover */
+      .navbar a:hover {
+        background-color: #93C572;
+        color: black;
+      }
+
+      /* Add a color to the active/current link */
+      .active {
+        background-color: #93C572;
+        color: white;
+      }
+
+      /* Style the content */
+      .content {
+        display: flex;
+	 flex-direction: column;
+        height: calc(100vh - 60px);
+	height: 100%;
+ 	 line-height: 1.8;
+      }
+
+      /* Style the left section */
+      .left-section {
+        //width: 100%;
+	//height: 85%;
+	background-position: center;
+ 	 background-size: cover;
+  	Background-color: #93C572;
+ 	 min-height: 100%;
+        background-color: #93C572;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+      }
+	
+
+
+      /* Style the right section */
+      .right-section {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    
+
+      /* Style the form */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      input {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
+      }
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #59910F;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#my-element {
+    position: left;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#my-element a {
+    color: grey;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+
+  #my-element a:hover {
+    color: lightgrey;
+  }
+
+button:hover {
+  background-color: #93C572;
+}
+      /* Style the footer */
+      .footer {
+        background-color: #93C572;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <a href="#">CT</a>
+      <div>
+<img align="left" src="icon.jpg" alt="icon" width="50" height="40">
+  <a href="#">Hello, Bob</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      
+
+</div>
+      </div>
+    </div>
+
+    <!-- Page content -->
+
+    <div class="left-section">
+<div class="image">
+<img align = "right" src="atlmap.jpg" alt="atl map" width = "700" height = "600" >
+
+  <h1>Chosen Delivery: FedEx</h1>
+  <h2>Location: Atlanta, GA</h2>
+  <h3>Date: March 1, 2023</h3>
+  <h3>Possible Pay: $500.00</h3>
+  <h3>Confirm Shift ? 
+    <button onclick="showForm()">Yes</button>
+    <button>No</button>
+  </h3>
+  
+  <form id="myForm" style="display: none;">
+    <label for="name">1. Name?</label>
+    <input type="text" id="name" name="Name" required>
+    <label for="employee-number"><br>2. Employee number?</label></br>
+    <input type="text" id="employee-number" name="employee-number" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script>
+function showForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+</script>
+
+<div id="my-element">
+  <a href="#">Contact Information</a>
+  <br>
+  <a href="#">FAQs</a>
+</div>
+
+
+     
