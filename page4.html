@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Courier Tracker </title>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <style>
+        /* Style the navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        /* Style the links inside the navigation bar */
+        .navbar a {
+            color: black;
+            text-align: left;
+            text-decoration: none;
+            padding: 10px;
+        font-size: 15px;
+        margin-right: 20px;
+        }
+
+        body {
+        border: 1px solid black;
+        padding: 15px;
+        }
+
+        /* Change the color of links on hover */
+        .navbar a:hover {
+            background-color: #93C572;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .active {
+            background-color: #93C572;
+            color: white;
+        }
+        
+        #my-element{
+            position: left;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+        }
+        #my-element a {
+            color: grey;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        #my-element a:hover {
+            color: lightgrey;
+        }
+
+        #store-button{
+            background-color: #93C572
+        }
+
+        button {
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            background-color: #59910F;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <a href="#">CT</a>
+      <div>
+<img src="icon.jpg" alt="icon" width="50" height="40">
+  <a href="#">Hello, Bob</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      
+
+</div>
+      </div>
+    </div>
+
+    <!-- Page content -->
+
+    <div style="display: flex; font-family: 'Raleway', sans-serif;">
+    <div style="flex: 25%; padding: 5px; background-color: #59910F;">
+        <p style="font-size: 20px;">Stores</p>
+
+        <a href="#">Store 1</a>
+        <br>
+        <a href="#"> Store 2</a>
+        <br>
+        <a href="#">Store 3</a>
+    </div>
+
+    <div style="flex: 75%; padding: 3px;">
+        <p style="font-size: 20px;"> Packages</p>
+        <div id = "store-button">
+        <h3> Package 1  </h3>
+            <p>Amount: $$$ </p>
+            <button> Confirm</button>
+      
+        </div>
+
+        <br>
+
+        <div id = "store-button">
+        <h3> Package 2 </h3>
+            <p>Amount: $$$ </p>
+            <button> Confirm</button>  
+        </div>
+
+        <br> 
+
+        <div id = "store-button">
+            <h3> Package 3 </h3>
+                <p>Amount: $$$ </p>
+                <button> Confirm</button>  
+            </div>
+    </div>
+</div>
+            <div>
+                <footer>
+                    <div id="my-element">
+                        <a href="#">Contact Information</a>
+                        <br>
+                        <a href="#">FAQs</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
