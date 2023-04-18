@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="lognphp.css">
+
+</head>
+<body>
+
+<h1>
+  <a href="ct.html" class="link">CT</a>
+</h1>
+	<div class="container">
+		<div class="header">
+			<h2>Register</h2>
+
+		</div>
+		<form method="post" action="register.php">
+			<!-- display validation errors here -->
+			<?php include('errors.php'); ?>
+			<div class="input-group">
+				<label>Username</label>
+				<input type="text" name="username" >
+			</div>
+			<div class="input-group">
+				<label>Email</label>
+				<input type="email" name="email" >
+			</div>
+			<div class="input-group">
+				<label>Password</label>
+				<input type="password" name="password_1">
+			</div>
+			<div class="input-group">
+				<label>Confirm password</label>
+				<input type="password" name="password_2">
+			</div>
+		<div class="input-group">
+  <a href="login.html" class="button">Register</a>
+</div>
+
+			<p>
+				Already a member? <a href="login.html">Sign in</a>
+			</p>
+		</form>
+	</div>
+<div id="footer">
+    <div id="copyRight" class="column left">&copy;
+      Team 2 Courier Tracker,
+      All Rights Reserved. </div>
+    <div id="contactInfo" class="column right" style="text-align: right;">123 Petit Center XXX-XXX-XXXX FAQs </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <title> CT: Courier Tracker </title>
+ <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="3courierdetails.css">
+  <script src="3courierdetails.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar a {
+  color: black;
+  align-items: left;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.navbar-logo, h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a:hover {
+  color: #93C572;
+  text-decoration: underline;
+}
+
+.navbar-logo:hover {
+  color: #93C572;
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  left: auto;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar a {
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.navbar a:hover {
+  color: #93C572;
+  text-decoration: underline;
+}
+
+.navbar-logo:hover {
+  color: #93C572;
+  text-decoration: underline;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  left: auto;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+font-family: 'Raleway', sans-serif;
+}
+/* CSS for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+font-family: 'Raleway', sans-serif;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+font-family: 'Raleway', sans-serif;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+font-family: 'Raleway', sans-serif;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+/* CSS for main section */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("rowan-freeman-clYlmCaQbzY-unsplash.jpg");
+  background-size: 38%;
+  background-position: center;
+  background-repeat: no-repeat;
+background-image: url("track.jpg");
+
+}
+
+.intro h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+border:5px;
+}
+
+.intro p {
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.intro button {
+  background-color: #94C973;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+}
+
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container input {
+  width: 200px;
+  height: 30px;
+  margin-right: 10px;
+  padding: 5px;
+  border: solid 2px; 
+  border-color: grey;
+  border-radius: 1px;
+
+
+}
+
+.input-container button {
+  height: 15px;
+  padding: 5px 5px;
+  border: solid;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+ </style>
+</head>
+<script>
+  <title>Courier Details</title>
+</head>
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-toggle').dropdown();
+    });
+
+    
+  </script>
+
+<body>
+<nav class="navbar">
+    <div class="navbar-left">
+      <a href="ct.html"><span class="navbar-logo">CT</span></a>
+    </div>
+    <div class="dropdown">
+      <div class="navbar-right">
+        <a href="Aboutus.html"><span class="navbar-right">About</span></a><a href="contact.html"><span
+            class="navbar-right">Contact</span></a><a href="login.html" class="dropdown-toggle" id="logoutDropdown"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> More <span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="logoutDropdown">
+         <li><a href="ct.html">Home</a></li>
+       
+          <li><a href="login.html">Courier Login</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="intro">
+    
+    <p style="color: black">Track  Your  Package </p>
+<div class="input-container">
+ <form>
+      <label for="tracking_number" style="color: black;">Delivery ID:</label>
+
+      <input type="text" id="tracking_number" name="tracking_number">
+      <input type="button" value="Track" onclick="track()" >
+    </form>
+	 
+    <script>
+  function track() {
+    var tracking_number = document.getElementById("tracking_number").value;
+    // Code to track the package using the tracking_number
+    alert("Delivery ID: " + tracking_number);
+    window.location.href = "3courierdetails.html";
+  }
+</script>
+
+    
+  </div>
+</main>
+
+</body>
+
+</html>

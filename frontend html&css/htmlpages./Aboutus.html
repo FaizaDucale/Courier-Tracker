@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+ <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
+
+    <title>About Us!</title>
+</head>
+<style>
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar a {
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.navbar a:hover {
+  color: #93C572;
+  text-decoration: underline;
+}
+
+.navbar-logo:hover {
+  color: #93C572;
+  text-decoration: underline;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  left: auto;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+background-image: url("drive.jpg");
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+border-radius: 5px;
+border: 1px solid black;
+
+}
+
+.button:hover {
+  background-color: #93C572;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+
+  }
+#footer {
+            margin-top: auto;
+            background-color: #f5f5f5;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+	    font-family: 'Raleway', sans-serif;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        #copyRight {
+            text-align: left;
+        }
+
+        #contactInfo {
+            text-align: right;
+        }
+
+
+</style>
+</head>
+<body>
+</head> 
+<body>
+  
+  <nav class="navbar">
+    <div class="navbar-left">
+     <a href="ct.html"><span class="navbar-logo">CT</span></a>
+
+    </div>
+    <div class="navbar-right">
+      <a href="Aboutus.html"><span class="navbar-right">About</span></a>
+      <a href="contact.html"><span class="navbar-right">Contact</span></a>
+     <a href="login.html" class="dropdown-toggle" id="logoutDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Logout <span class="caret"></span>
+  </a>
+   <ul class="dropdown-menu" aria-labelledby="logoutDropdown">
+         <li><a href="1home.html">Home</a></li>
+          <li><a href="3courierdetails.html">Courier Details</a></li>
+          <li><a href="pastdel.html">Past Delivery</a></li>
+          <li><a href="login.html">Logout, User</a></li>
+        </ul>
+</div>
+</div>
+</div>
+    </div>
+  </nav>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Myra</h2>
+        <p class="title">Front-end/Backend Developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Myra@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Emi </h2>
+        <p class="title">Front-end/Backend Developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Emi@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Onyi</h2>
+        <p class="title"> Front-end/Backend Developer </p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Onyi@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+</div>
+</div>
+<div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Faiza</h2>
+        <p class="title"> Front-end/Backend Developer </p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Faiza@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+<div id="footer">
+        <div id="copyRight" class="column left">
+            &copy; Team 2 Courier Tracker, All Rights Reserved.  
+        </div>
+        <div id="contactInfo" class="column right" style="text-align: right;">
+            123 Petit Center
+            XXX-XXX-XXXX
+            FAQs
+        </div> 
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
